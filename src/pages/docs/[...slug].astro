@@ -36,7 +36,7 @@ const isTraining = collectionName === 'trainingFull';
     <header class="document-header">
       <a class="document-brand" href="/">KPAI · 한국 반려동물 연구원</a>
       <nav aria-label="문서 메뉴">
-        <a href={isTraining ? '/training.html' : '/encyclopedia-full.html'}>{isTraining ? '훈련서 목록' : '백과사전 목록'}</a>
+        <a href={isTraining ? '/training' : '/encyclopedia-full'}>{isTraining ? '훈련서 목록' : '백과사전 목록'}</a>
         <a href="/">홈</a>
       </nav>
     </header>
@@ -49,7 +49,7 @@ const isTraining = collectionName === 'trainingFull';
         <Content />
       </article>
       <footer class="document-footer">
-        <a href={isTraining ? '/training.html' : '/encyclopedia-full.html'}>← 목록으로 돌아가기</a>
+        <a href={isTraining ? '/training' : '/encyclopedia-full'}>← 목록으로 돌아가기</a>
         <span>한국 반려동물 연구원</span>
       </footer>
     </main>
