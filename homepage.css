@@ -77,6 +77,19 @@ h1 em { color: var(--yellow); font-style: normal; }
 .site-footer { align-items: flex-end; display: grid; gap: 30px; grid-template-columns: 1fr 1fr auto; padding: 48px 5vw; }
 .site-footer p { font-size: 12px; margin: 0; }
 .footer-year { color: var(--muted); font: 11px var(--mono); }
+.archive-main { margin: 0 auto; max-width: 1180px; padding: 110px 5vw 150px; }
+.archive-hero { max-width: 700px; padding-bottom: 75px; }
+.archive-hero h1 { font-size: clamp(42px, 6vw, 78px); margin-bottom: 25px; }
+.archive-hero > p:last-child { color: var(--muted); font-size: 15px; line-height: 1.9; max-width: 580px; }
+.archive-toolbar { align-items: center; border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); color: var(--green); display: flex; font: 11px var(--mono); justify-content: space-between; letter-spacing: .08em; padding: 18px 0; }
+.archive-toolbar a { color: var(--ink); }
+.document-list { list-style: none; margin: 0; padding: 0; }
+.document-list li { border-bottom: 1px solid var(--line); }
+.document-list a { align-items: center; display: grid; gap: 28px; grid-template-columns: 42px 1fr 230px; padding: 27px 16px 27px 0; transition: background .2s, padding .2s; }
+.document-list a:hover { background: var(--paper-deep); padding-left: 16px; }
+.document-list a > span { color: var(--green); font: 500 11px var(--mono); }
+.document-list strong { font-size: 18px; font-weight: 600; letter-spacing: -.04em; }
+.document-list small { color: var(--muted); font-size: 12px; }
 
 @media (max-width: 700px) {
   .site-header { padding: 19px 6vw; }
@@ -99,4 +112,9 @@ h1 em { color: var(--yellow); font-style: normal; }
   .process-list li { gap: 12px; grid-template-columns: 32px 1fr; }
   .process-list small { grid-column: 2; }
   .site-footer { align-items: start; display: flex; flex-direction: column; padding: 40px 8vw; }
+  .archive-main { padding: 75px 8vw 100px; }
+  .archive-hero { padding-bottom: 50px; }
+  .document-list a { align-items: start; gap: 12px; grid-template-columns: 30px 1fr; padding: 22px 0; }
+  .document-list a:hover { padding-left: 8px; }
+  .document-list small { grid-column: 2; }
 }
