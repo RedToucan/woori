@@ -1,0 +1,9 @@
+---
+import { getCollection } from 'astro:content';
+import '../styles/archive.css';
+const documents = (await getCollection('trainingFull')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+---
+<html lang="ko"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>훈련 드릴북 | 한국 반려동물 연구원</title></head><body>
+<header class="site-header"><a class="brand" href="/"><span class="brand-mark">KPAI</span>한국 반려동물 연구원</a><nav class="main-nav"><a href="/">홈</a><a href="/encyclopedia-full">백과사전</a></nav></header>
+<main class="archive-main"><p class="eyebrow">TRAINING DRILLBOOK · {documents.length} DOCUMENTS</p><h1>훈련 드릴북</h1><p class="archive-intro">기본 자세부터 일상 속 행동 유지까지, 개와 사람이 함께 연습하는 과정을 정리한 훈련 문서 모음입니다.</p><div class="archive-toolbar"><span>전체 {documents.length}편</span><a href="/">← 홈으로</a></div><ol class="document-list">{documents.map((document, index) => <li><a href={`/docs/training-full/${document.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? '훈련 문서'}</small></a></li>)}</ol></main>
+</body></html>
