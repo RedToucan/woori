@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c8ad72">
+  <title>걷기</title>
+  <desc>두 발자국과 굽이치는 이동 경로를 담은 원형 아이콘.</desc>
+  <circle cx="80" cy="80" r="71" fill="#141510" stroke="currentColor" stroke-opacity=".65" stroke-width="1.5"/>
+  <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-22 61 88)">
+      <path d="M53 91c-5-9-6-21 0-26 4-4 11-3 14 3 3 5 1 14-2 23H53Z"/>
+      <path d="M54 98h10v8c0 8-10 8-10 0v-8Z"/>
+    </g>
+    <g transform="rotate(18 95 60)">
+      <path d="M87 63c-5-9-6-21 0-26 4-4 11-3 14 3 3 5 1 14-2 23H87Z"/>
+      <path d="M88 70h10v8c0 8-10 8-10 0v-8Z"/>
+    </g>
+    <path d="M77 125c28 0 45-12 40-28" stroke-dasharray="2 7" stroke-opacity=".75"/>
+  </g>
+</svg>

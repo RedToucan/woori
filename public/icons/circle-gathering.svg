@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c8ad72">
+  <title>채집</title>
+  <desc>야생 열매와 잎을 모은 바구니로 채집을 표현한 원형 아이콘.</desc>
+  <circle cx="80" cy="80" r="71" fill="#141510" stroke="currentColor" stroke-opacity=".65" stroke-width="1.5"/>
+  <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 84h68l-8 32a6 6 0 0 1-6 5H60a6 6 0 0 1-6-5l-8-32Z"/>
+    <path d="M43 84h74M66 93l4 20m10-20v20m14-20-4 20M59 101h42" stroke-opacity=".85"/>
+    <path d="M68 82c0-16 7-30 23-42M81 54c-13-1-20-7-19-17 12 0 20 6 19 17Zm1 6c7-11 18-13 28-9-5 10-15 14-28 9Z"/>
+    <circle cx="57" cy="74" r="7"/>
+    <circle cx="83" cy="76" r="7"/>
+    <circle cx="98" cy="75" r="8"/>
+    <path d="m56 64 3 3m38-4 2 4"/>
+  </g>
+</svg>

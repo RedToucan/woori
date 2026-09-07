@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bd934f">
+  <title>통곡물</title>
+  <g stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <circle cx="80" cy="80" r="55"/>
+    <path d="M47 50a45 45 0 0 0 0 60m66-60a45 45 0 0 1 0 60M80 42v91"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M80 48c-9-8-9-18 0-29 9 11 9 21 0 29ZM75 70c-14-2-20-10-20-23 14 4 20 12 20 23Zm10 0c14-2 20-10 20-23-14 4-20 12-20 23ZM75 92c-14-2-20-10-20-23 14 4 20 12 20 23Zm10 0c14-2 20-10 20-23-14 4-20 12-20 23ZM75 114c-14-2-20-10-20-23 14 4 20 12 20 23Zm10 0c14-2 20-10 20-23-14 4-20 12-20 23Z"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#d4b46b">
+  <title>감소와 아래 방향</title>
+  <rect width="160" height="160" fill="#151513"/>
+  <path d="M65 26h30v59h29l-44 49-44-49h29V26Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+</svg>

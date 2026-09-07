@@ -1,57 +1,51 @@
 ---
-import { getCollection, render } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import { getAllDocuments } from '../../lib/documents';
 import '../../styles/document.css';
+import MenuIcon from '../../components/MenuIcon.astro';
 
 export async function getStaticPaths() {
-  const training = await getCollection('trainingFull');
-  const encyclopedia = await getCollection('encyclopediaFull');
-
-  return [
-    ...training.map((entry) => ({ params: { slug: `training-full/${entry.id}` } })),
-    ...encyclopedia.map((entry) => ({ params: { slug: `encyclopedia-full/${entry.id}` } }))
-  ];
+  const documents = await getAllDocuments();
+  return documents.map((doc) => ({
+    params: { slug: `${doc.collection.folder}/${doc.entry.id}` },
+    props: { doc }
+  }));
 }
 
-const [collectionFolder, documentId] = Astro.params.slug?.split('/') ?? [];
-const collectionName = collectionFolder === 'training-full' ? 'trainingFull' : 'encyclopediaFull';
-const documents = await getCollection(collectionName);
-const document = documents.find((entry) => entry.id === documentId) as CollectionEntry<typeof collectionName> | undefined;
-
-if (!document) {
-  return Astro.redirect('/404');
-}
-
-const { Content } = await render(document);
-const isTraining = collectionName === 'trainingFull';
+const { doc } = Astro.props;
+const { entry, collection } = doc;
+const { Content } = await render(entry);
 ---
 
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{document.data.title} | 한국 반려동물 연구원</title>
+    <title>{entry.data.title} | 한국 반려동물 연구원</title>
   </head>
   <body>
     <header class="document-header">
       <a class="document-brand" href="/">KPAI · 한국 반려동물 연구원</a>
       <nav aria-label="문서 메뉴">
-        <a href={isTraining ? '/training' : '/encyclopedia-full'}>{isTraining ? '훈련서 목록' : '백과사전 목록'}</a>
-        <a href="/">홈</a>
+        <a href={collection.route}><MenuIcon name={collection.icon} />{collection.name} 목록</a>
+        <a href="/"><MenuIcon name="home" />홈</a>
       </nav>
     </header>
     <main class="document-shell">
       <div class="document-meta">
-        <span>{isTraining ? 'TRAINING DRILLBOOK' : 'ENCYCLOPEDIA FULL'}</span>
-        {document.data.category && <span>{document.data.category}</span>}
+        <span>{collection.label}</span>
+        {entry.data.category && <span>{entry.data.category}</span>}
       </div>
       <article class="document-content">
         <Content />
       </article>
       <footer class="document-footer">
-        <a href={isTraining ? '/training' : '/encyclopedia-full'}>← 목록으로 돌아가기</a>
+        <a href={collection.route}>← 목록으로 돌아가기</a>
         <span>한국 반려동물 연구원</span>
       </footer>
     </main>
   </body>
 </html>
+<style>
+  .document-header nav a { display:inline-flex; align-items:center; gap:7px; }
+</style>

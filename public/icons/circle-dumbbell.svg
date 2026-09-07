@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c5a466">
+  <title>근력 운동</title>
+  <circle cx="80" cy="80" r="73" fill="#151513" stroke="currentColor" stroke-opacity=".7" stroke-width="1.5"/>
+  <g fill="currentColor">
+    <rect x="58" y="76" width="44" height="8" rx="2"/>
+    <rect x="44" y="55" width="12" height="50" rx="5"/>
+    <rect x="33" y="63" width="8" height="34" rx="3"/>
+    <rect x="26" y="72" width="5" height="16" rx="2"/>
+    <rect x="104" y="55" width="12" height="50" rx="5"/>
+    <rect x="119" y="63" width="8" height="34" rx="3"/>
+    <rect x="129" y="72" width="5" height="16" rx="2"/>
+  </g>
+</svg>

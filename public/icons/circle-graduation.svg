@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c99b4d">
+  <title>학습과 교육</title>
+  <circle cx="80" cy="80" r="69" fill="#12130f" stroke="currentColor" stroke-width="2"/>
+  <path d="m36 64 44-18 44 18-44 19-44-19Z" fill="currentColor"/>
+  <path d="M54 81v18c14 12 38 12 52 0V81L80 92 54 81Z" fill="currentColor"/>
+  <path d="m80 63-38 15v19" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m42 89-3 17h6l-3-17Z" fill="currentColor"/>
+</svg>

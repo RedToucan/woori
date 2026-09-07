@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bd9146">
+  <title>안전 확인</title>
+  <rect width="160" height="160" fill="#080908"/>
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 26C67 36 51 42 35 45v25c0 31 16 49 45 64 29-15 45-33 45-64V45c-16-3-32-9-45-19Z" stroke-width="4.5"/>
+    <path d="m62 80 14 14 25-29" stroke-width="7"/>
+  </g>
+</svg>

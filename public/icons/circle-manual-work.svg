@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c5a466">
+  <title>수작업</title>
+  <circle cx="80" cy="80" r="73" fill="#151513" stroke="currentColor" stroke-opacity=".7" stroke-width="1.5"/>
+  <path d="m83 57 43 46" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+  <path d="m73 39 12-2 17 17-4 11-7 4-23-23 5-7Z" fill="currentColor"/>
+  <path d="m79 39 18 19" stroke="#151513" stroke-width="2"/>
+  <path d="m53 89 12-18 8-18c2-4 7-2 6 2l-5 23 9-9c4-3 8 1 5 5L75 92l-13 12" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m36 111 10-22 11-3 12 6 13-2c5-1 8 4 4 7l-14 7 16-5c5-2 8 3 4 7l-18 16-23 4-15-15Z" fill="currentColor"/>
+  <path d="m56 103 12 3 13-4" stroke="#151513" stroke-width="2" stroke-linecap="round"/>
+</svg>

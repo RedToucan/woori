@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#d8aa50">
+  <title>사람들과 공동체</title>
+  <g fill="currentColor">
+    <circle cx="80" cy="49" r="17"/>
+    <circle cx="43" cy="59" r="13"/>
+    <circle cx="117" cy="59" r="13"/>
+    <path d="M48 119V99c0-16 14-28 32-28s32 12 32 28v20H48Z"/>
+    <path d="M20 115V99c0-14 10-22 23-22 5 0 9 1 12 3-8 5-12 12-12 21v14H20Zm120 0V99c0-14-10-22-23-22-5 0-9 1-12 3 8 5 12 12 12 21v14h23Z"/>
+  </g>
+</svg>

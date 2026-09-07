@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#cba66a">
+  <title>지방세포</title>
+  <defs>
+    <radialGradient id="cell" cx=".3" cy=".2" r=".9">
+      <stop stop-color="#ead39b"/>
+      <stop offset=".5" stop-color="currentColor"/>
+      <stop offset="1" stop-color="#806030"/>
+    </radialGradient>
+  </defs>
+  <g fill="url(#cell)" stroke="#795d32" stroke-width="2">
+    <ellipse cx="55" cy="49" rx="21" ry="24"/>
+    <ellipse cx="85" cy="38" rx="21" ry="23"/>
+    <ellipse cx="112" cy="49" rx="21" ry="25"/>
+    <ellipse cx="125" cy="78" rx="20" ry="25"/>
+    <ellipse cx="36" cy="80" rx="22" ry="25"/>
+    <ellipse cx="47" cy="110" rx="23" ry="24"/>
+    <ellipse cx="115" cy="111" rx="22" ry="24"/>
+    <ellipse cx="66" cy="75" rx="25" ry="29"/>
+    <ellipse cx="98" cy="79" rx="26" ry="28"/>
+    <ellipse cx="73" cy="123" rx="23" ry="23"/>
+    <ellipse cx="99" cy="123" rx="20" ry="24"/>
+  </g>
+  <g stroke="#f5e6be" stroke-width="3" stroke-linecap="round" opacity=".85">
+    <path d="M76 24c-4 1-6 4-7 7M104 34c-4 1-6 4-7 7M55 55c-6 2-9 6-10 12M88 59c-5 1-8 4-9 9M27 64l-3 6M63 110l-4 6M91 110l-3 5"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#63879e">
+  <title>불꽃과 에너지</title>
+  <rect width="160" height="160" fill="#111210"/>
+  <circle cx="80" cy="80" r="65" stroke="currentColor" stroke-width="1.3"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M77 37c17 10 21 22 16 37 7-5 10-11 10-17 9 14 17 30 14 43-3 17-16 27-35 27-21 0-35-11-35-29 0-14 8-27 13-37 0 10 3 17 7 21 1-17 16-28 10-45Zm3 45c-1 13-14 21-14 31 0 8 6 12 14 12 9 0 15-6 15-14 0-7-4-13-7-18 0 6-2 10-5 12 1-9-1-17-3-23Z"/>
+</svg>

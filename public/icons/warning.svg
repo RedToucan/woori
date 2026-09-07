@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bd9146">
+  <title>주의와 경고</title>
+  <rect width="160" height="160" fill="#080908"/>
+  <path d="M74 31c3-5 9-5 12 0l49 85c3 5 0 11-6 11H31c-6 0-9-6-6-11l49-85Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M80 62v30" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="80" cy="109" r="5" fill="currentColor"/>
+</svg>

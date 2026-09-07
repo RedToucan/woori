@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c5a466">
+  <title>걷기와 이동</title>
+  <circle cx="80" cy="80" r="73" fill="#151513" stroke="currentColor" stroke-opacity=".7" stroke-width="1.5"/>
+  <circle cx="86" cy="38" r="8" fill="currentColor"/>
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m82 57-5 30 13 16 9 23m-22-39-5 19-15 20" stroke-width="10"/>
+    <path d="m80 54-16 13-2 18m22-29 8 14 12 8" stroke-width="8"/>
+    <path d="m98 126 7-2m-48 2 5 2" stroke-width="7"/>
+  </g>
+</svg>

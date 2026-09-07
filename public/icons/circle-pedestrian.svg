@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c99b4d">
+  <title>행동과 실천</title>
+  <circle cx="80" cy="80" r="69" fill="#12130f" stroke="currentColor" stroke-width="2"/>
+  <circle cx="85" cy="43" r="7" fill="currentColor"/>
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m81 61-6 26 12 14 7 19m-19-33-7 19-11 14" stroke-width="8"/>
+    <path d="m80 58-16 10-3 16m22-24 8 11 12 7" stroke-width="6.5"/>
+  </g>
+</svg>

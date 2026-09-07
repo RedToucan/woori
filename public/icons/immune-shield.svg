@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c99b60">
+  <title>면역과 보호</title>
+  <desc>어두운 배경 위에 금빛 방패와 바이러스 모양을 배치한 면역 보호 아이콘.</desc>
+  <rect width="160" height="160" fill="#151513"/>
+  <g stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 19C65 30 48 35 29 38v33c0 33 18 53 51 69 33-16 51-36 51-69V38c-19-3-36-8-51-19Z"/>
+    <circle cx="80" cy="79" r="17"/>
+    <path d="M80 62V52m12 15 7-7m-2 19h10M92 91l7 7M80 96v10M68 91l-7 7M63 79H53m15-12-7-7"/>
+  </g>
+  <g fill="currentColor">
+    <circle cx="80" cy="52" r="3.2"/>
+    <circle cx="99" cy="60" r="3.2"/>
+    <circle cx="107" cy="79" r="3.2"/>
+    <circle cx="99" cy="98" r="3.2"/>
+    <circle cx="80" cy="106" r="3.2"/>
+    <circle cx="61" cy="98" r="3.2"/>
+    <circle cx="53" cy="79" r="3.2"/>
+    <circle cx="61" cy="60" r="3.2"/>
+    <circle cx="75" cy="74" r="2.8"/>
+    <circle cx="86" cy="81" r="2.4"/>
+    <circle cx="76" cy="86" r="1.8"/>
+  </g>
+</svg>

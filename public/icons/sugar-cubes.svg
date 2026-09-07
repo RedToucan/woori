@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#b5aa91">
+  <title>설탕 큐브</title>
+  <g stroke="#514b40" stroke-width="1.5" stroke-linejoin="round">
+    <path d="m80 24 23 11-23 12-23-12 23-11Z" fill="#d3c9b4"/>
+    <path d="M57 35v29l23 12V47L57 35Z" fill="currentColor"/>
+    <path d="m80 47 23-12v29L80 76V47Z" fill="#918671"/>
+    <path d="m52 72 24 12-24 12-24-12 24-12Z" fill="#d3c9b4"/>
+    <path d="M28 84v29l24 12V96L28 84Z" fill="currentColor"/>
+    <path d="m52 96 24-12v29l-24 12V96Z" fill="#918671"/>
+    <path d="m108 72 24 12-24 12-24-12 24-12Z" fill="#d3c9b4"/>
+    <path d="M84 84v29l24 12V96L84 84Z" fill="currentColor"/>
+    <path d="m108 96 24-12v29l-24 12V96Z" fill="#918671"/>
+  </g>
+</svg>

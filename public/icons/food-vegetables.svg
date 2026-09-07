@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bd934f">
+  <title>채소</title>
+  <g stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 133c14-31 34-62 65-90M73 96C42 91 34 65 36 29c31 4 52 24 48 52M81 60c-4-16-1-29 11-41 16 15 22 31 16 46M86 87c6-30 27-40 55-41-2 33-20 57-54 57M65 111c-22-14-39-5-42 25 22 1 37-6 42-25Zm33 8c17-15 35-12 42 9-17 8-33 6-42-9Z"/>
+    <path d="m50 46 20 41m56-26-28 29m-7 19 7 10m-35-15 3-7M38 120l13-6"/>
+  </g>
+</svg>

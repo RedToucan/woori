@@ -1,9 +1,0 @@
----
-import { getCollection } from 'astro:content';
-import '../styles/archive.css';
-const documents = (await getCollection('encyclopediaFull')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
----
-<html lang="ko"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>반려동물 문화 백과사전 | 한국 반려동물 연구원</title></head><body>
-<header class="site-header"><a class="brand" href="/"><span class="brand-mark">KPAI</span>한국 반려동물 연구원</a><nav class="main-nav"><a href="/">홈</a><a href="/training">훈련서</a></nav></header>
-<main class="archive-main"><p class="eyebrow">ENCYCLOPEDIA FULL · {documents.length} DOCUMENTS</p><h1>반려동물 문화 백과사전</h1><p class="archive-intro">개와 사람이 함께 살아온 시간을 고대 문명부터 현대의 미디어와 훈련까지 이어서 살펴보는 긴 호흡의 연구 문서입니다.</p><div class="archive-toolbar"><span>전체 {documents.length}편</span><a href="/">← 홈으로</a></div><ol class="document-list">{documents.map((document, index) => <li><a href={`/docs/encyclopedia-full/${document.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? '백과사전 문서'}</small></a></li>)}</ol></main>
-</body></html>

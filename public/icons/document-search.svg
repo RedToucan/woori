@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <title>문서 검색</title>
+  <desc>검은 배경의 가는 금빛 원 안에 접힌 문서와 돋보기를 배치한 아이콘.</desc>
+  <defs>
+    <linearGradient id="gold" x1="30" y1="30" x2="125" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5dfa2"/>
+      <stop offset=".5" stop-color="#d8b76d"/>
+      <stop offset="1" stop-color="#97713e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" fill="#0b0c0b"/>
+  <circle cx="80" cy="80" r="67" stroke="url(#gold)" stroke-width="1.4"/>
+  <g stroke="url(#gold)" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M81 108H53V44h34l13 13v17"/>
+    <path d="M87 44v13h13"/>
+    <path d="M61 55h13M61 64h22M61 73h27M61 82h16M61 91h12M61 100h12"/>
+    <ellipse cx="96" cy="94" rx="13" ry="15"/>
+    <path d="m105 106 12 13" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

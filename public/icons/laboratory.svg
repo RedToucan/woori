@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c99b60">
+  <title>과학과 실험</title>
+  <rect width="160" height="160" fill="#151513"/>
+  <path d="M62 30h36v7l-7 4v35l32 53c3 5 0 9-6 9H43c-6 0-9-4-6-9l32-53V41l-7-4v-7Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="currentColor">
+    <circle cx="67" cy="113" r="6"/>
+    <circle cx="91" cy="117" r="7"/>
+    <circle cx="84" cy="99" r="3"/>
+  </g>
+</svg>

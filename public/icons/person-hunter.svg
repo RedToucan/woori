@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#e2ad3d">
+  <title>수렵채집인</title>
+  <desc>가죽옷을 입고 한 손으로 긴 창을 잡은 수렵채집인. 팔을 굽혀 창을 지탱하고 두 발을 벌려 서 있는 자세.</desc>
+  <!-- 창은 몸 옆에 배치하고 손이 창대를 감싸도록 뒤에서 그립니다. -->
+  <path d="m117 29-18 111" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="m120 12 4 16-7 7-5-9 8-14Z" fill="currentColor"/>
+  <path d="m113 36 6 1m-7 3 6 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M64 31c0-6 4-10 10-10 5 0 9 4 9 9v3l3 4-4 2v5c-3 3-8 3-12 0-4-3-6-7-6-13Z" fill="currentColor"/>
+  <path d="m70 43-1 8h11l-2-9" fill="currentColor"/>
+  <!-- 어깨와 허리의 폭을 달리해 몸통의 실루엣을 정리합니다. -->
+  <path d="M66 49c4-2 10-2 15 1l4 12-5 22 5 17-12 3-17-4 6-18-2-21 6-12Z" fill="currentColor"/>
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M63 98 59 117l-7 20m25-39 5 19 7 19" stroke-width="8.5"/>
+    <path d="m52 137-7 2m44-3 8 2" stroke-width="5.5"/>
+    <path d="M64 55 54 72l-5 21" stroke-width="7"/>
+    <path d="M80 55 91 77l19-6" stroke-width="7"/>
+    <path d="m49 92-1 5m61-26 3-2" stroke-width="7.5"/>
+  </g>
+</svg>

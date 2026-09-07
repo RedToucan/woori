@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c8ad72">
+  <title>사냥</title>
+  <desc>표적을 향하는 창으로 집중과 사냥을 표현한 원형 아이콘.</desc>
+  <circle cx="80" cy="80" r="71" fill="#141510" stroke="currentColor" stroke-opacity=".65" stroke-width="1.5"/>
+  <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 57a32 32 0 1 1 39 46M71 69a18 18 0 1 1 21 21"/>
+    <path d="m39 120 47-47" stroke-width="3.5"/>
+    <path d="m78 72 19-9-9 19-2-9-8-1Z" fill="currentColor"/>
+    <path d="m42 108 9 9m-5-14 9 9m-5-14 9 9"/>
+    <path d="M96 34v5m30 27h5M66 40l4 4" stroke-opacity=".65"/>
+  </g>
+</svg>

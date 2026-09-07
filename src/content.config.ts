@@ -20,5 +20,13 @@ const encyclopediaFull = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/encyclopedia-full' }),
   schema: documentSchema
 });
+const culture = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/culture' }),
+  schema: documentSchema
+});
+const health = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/health' }),
+  schema: documentSchema
+});
 
-export const collections = { trainingFull, encyclopediaFull };
+export const collections = { trainingFull, encyclopediaFull, culture, health };

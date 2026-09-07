@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bc8c37">
+  <title>통곡물과 자연식품</title>
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="80" cy="80" r="55" stroke-width="2"/>
+    <path d="M49 45a46 46 0 0 0 0 70m62-70a46 46 0 0 1 0 70M80 45v86" stroke-width="2.5"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M80 51c-10-9-9-19 0-30 9 11 10 21 0 30ZM76 73c-16-2-22-11-22-24 15 4 22 11 22 24Zm8 0c16-2 22-11 22-24-15 4-22 11-22 24ZM76 92c-16-2-22-11-22-24 15 4 22 11 22 24Zm8 0c16-2 22-11 22-24-15 4-22 11-22 24ZM76 111c-16-2-22-11-22-24 15 4 22 11 22 24Zm8 0c16-2 22-11 22-24-15 4-22 11-22 24Z"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#bc8c37">
+  <title>균형 잡힌 식단</title>
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M29 78h102c-5 29-21 45-45 45H70c-22 0-36-17-41-45Z"/>
+    <path d="M32 84h82c-3 19-15 31-32 33H70c-18-2-30-14-38-33Z" fill="currentColor" stroke="none"/>
+    <path d="M118 86c3-7 7-10 13-10h6c0 22-8 38-25 44M59 133h43M79 71V46m0 15c-19-1-26-13-27-28 18 2 29 12 27 28Zm2-14c-1-14 6-23 18-26 2 14-4 25-18 26Zm1 23c4-16 15-22 30-21-4 15-14 23-30 21Z"/>
+  </g>
+</svg>

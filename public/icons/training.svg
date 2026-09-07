@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#426b50" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <title>훈련 클릭커</title>
+  <rect x="5" y="11" width="21" height="16" rx="7"/>
+  <ellipse cx="15.5" cy="17" rx="4.5" ry="2.5"/>
+  <path d="M24 24h2a3 3 0 0 0 0-6M10 6l-1-2m7 2V3m6 4 2-2"/>
+</svg>

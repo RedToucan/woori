@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" style="color:#c99b60">
+  <title>역사와 문화</title>
+  <rect width="160" height="160" fill="#151513"/>
+  <g fill="currentColor">
+    <path fill-rule="evenodd" d="M80 30 27 61h106L80 30Zm0 13a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/>
+    <path d="M40 73h10v45H40zm35 0h10v45H75zm35 0h10v45h-10Z"/>
+  </g>
+  <g stroke="currentColor" stroke-width="3.5" stroke-linecap="square">
+    <path d="M32 67h96M36 73h18m17 0h18m17 0h18M36 118h18m17 0h18m17 0h18M32 124h96M27 131h106"/>
+  </g>
+</svg>

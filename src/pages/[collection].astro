@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import { COLLECTIONS } from '../lib/documents';
+import '../styles/archive.css';
+import MenuIcon from '../components/MenuIcon.astro';
+
+export async function getStaticPaths() {
+  return COLLECTIONS.map((collection) => ({
+    params: { collection: collection.route.replace('/', '') },
+    props: { collection }
+  }));
+}
+
+const { collection } = Astro.props;
+const documents = (await getCollection(collection.key)).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const otherCollections = COLLECTIONS.filter((c) => c.key !== collection.key);
+---
+<html lang="ko"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{collection.name} | 한국 반려동물 연구원</title></head><body>
+<header class="site-header"><a class="brand" href="/"><span class="brand-mark">KPAI</span>한국 반려동물 연구원</a><nav class="main-nav"><a href="/"><MenuIcon name="home" />홈</a>{otherCollections.map((c) => <a href={c.route}><MenuIcon name={c.icon} />{c.name}</a>)}</nav></header>
+<main class="archive-main"><p class="eyebrow">{collection.label} · {documents.length} DOCUMENTS</p><h1>{collection.name}</h1><div class="archive-toolbar"><span>전체 {documents.length}편</span><a href="/">← 홈으로</a></div><ol class="document-list">{documents.map((document, index) => <li><a href={`/docs/${collection.folder}/${document.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? collection.name}</small></a></li>)}</ol></main>
+</body></html>

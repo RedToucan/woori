@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <title>생각하는 사람</title>
+  <desc>왼쪽을 향한 얼굴 윤곽과 세 점이 담긴 생각 구름을 따뜻한 금빛 선으로 표현한 아이콘.</desc>
+  <defs>
+    <radialGradient id="background">
+      <stop stop-color="#23221e"/>
+      <stop offset="1" stop-color="#111213"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <g id="drawing" stroke="#f0dca3" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M55 23C36 26 26 41 27 59c-1 8-6 17-10 24-1 2 0 3 3 4l7 2-2 6c-1 2 1 4 5 4-3 2-4 4-1 6l3 1c-1 5-1 9 3 12 5 3 14 1 21 1 6 0 7 6 7 15v8"/>
+      <path d="M48 66C37 64 34 54 38 44c3-8 11-13 21-13 2-9 10-14 19-12 6-15 26-14 33-2 11-3 23 3 25 14 11 4 16 16 12 26-3 8-10 12-18 12-2 10-12 16-22 12-7 7-19 7-25-1-10 4-22-2-23-12-4 2-9 1-12-2Z"/>
+      <circle cx="126" cy="92" r="9"/>
+      <circle cx="111" cy="111" r="5"/>
+      <path d="M111 124c0 7 1 13 4 19"/>
+      <g fill="#f0dca3" stroke="none">
+        <circle cx="74" cy="50" r="3.4"/>
+        <circle cx="92" cy="50" r="3.4"/>
+        <circle cx="110" cy="50" r="3.4"/>
+      </g>
+    </g>
+  </defs>
+  <rect width="160" height="160" fill="url(#background)"/>
+  <use href="#drawing" filter="url(#glow)" opacity=".65"/>
+  <use href="#drawing"/>
+</svg>
