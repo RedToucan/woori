@@ -5,6 +5,11 @@ const documentSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
   category: z.string().optional(),
+  // Groups documents that form a connected, ordered series (e.g. a multi-part
+  // art-history collection) so they can be listed together instead of being
+  // interleaved with unrelated standalone articles that merely share a
+  // category. Documents without a series are standalone.
+  series: z.string().optional(),
   order: z.number().optional(),
   slug: z.string().optional(),
   status: z.string().optional(),
@@ -16,10 +21,6 @@ const trainingFull = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/training-full' }),
   schema: documentSchema
 });
-const encyclopediaFull = defineCollection({
-  loader: glob({ pattern: '**/*.mdx', base: './src/content/encyclopedia-full' }),
-  schema: documentSchema
-});
 const culture = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/culture' }),
   schema: documentSchema
@@ -29,4 +30,4 @@ const health = defineCollection({
   schema: documentSchema
 });
 
-export const collections = { trainingFull, encyclopediaFull, culture, health };
+export const collections = { trainingFull, culture, health };

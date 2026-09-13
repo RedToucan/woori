@@ -1,0 +1,40 @@
+---
+// Overrides the plain <img> that Markdown/MDX `![alt](src)` syntax produces
+// (wired up in docs/[...slug].astro via <Content components={{ img: ArticleImage }} />),
+// so every photo in an article fills the same column width. Height is left
+// to scale naturally with each photo's own aspect ratio — never cropped.
+interface Props {
+  src: string;
+  alt?: string;
+}
+
+const { src, alt = '' } = Astro.props;
+---
+
+<figure class="doc-figure">
+  <img class="doc-figure__img" src={src} alt={alt} loading="lazy" />
+  {alt && <figcaption class="doc-figure__caption">{alt}</figcaption>}
+</figure>
+
+<style>
+  .doc-figure {
+    margin: 34px 0;
+  }
+  .doc-figure__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+  }
+  .doc-figure__caption {
+    margin: 10px 4% 0;
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .doc-figure { margin: 26px 0; }
+  }
+</style>

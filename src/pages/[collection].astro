@@ -1,8 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
-import { COLLECTIONS } from '../lib/documents';
+import type { CollectionEntry } from 'astro:content';
+import { COLLECTIONS, hrefForEntry } from '../lib/documents';
+import type { CollectionKey, CollectionMeta } from '../lib/documents';
 import '../styles/archive.css';
 import MenuIcon from '../components/MenuIcon.astro';
+
+interface Props {
+  collection: CollectionMeta;
+}
 
 export async function getStaticPaths() {
   return COLLECTIONS.map((collection) => ({
@@ -12,10 +18,34 @@ export async function getStaticPaths() {
 }
 
 const { collection } = Astro.props;
-const documents = (await getCollection(collection.key)).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const documents = ((await getCollection(collection.key)) as CollectionEntry<CollectionKey>[]).sort(
+  (a, b) => (a.data.order ?? 0) - (b.data.order ?? 0)
+);
 const otherCollections = COLLECTIONS.filter((c) => c.key !== collection.key);
+
+// Documents that belong to a `series` are a connected, ordered read (e.g. a
+// multi-part art-history collection) and are listed together under their own
+// heading instead of being interleaved with unrelated standalone articles
+// that merely happen to share the same `order` number.
+const standalone = documents.filter((d) => !d.data.series);
+const seriesNames = [...new Set(documents.filter((d) => d.data.series).map((d) => d.data.series as string))];
+const seriesGroups = seriesNames.map((name) => ({
+  name,
+  docs: documents.filter((d) => d.data.series === name)
+}));
 ---
 <html lang="ko"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{collection.name} | 한국 반려동물 연구원</title></head><body>
-<header class="site-header"><a class="brand" href="/"><span class="brand-mark">KPAI</span>한국 반려동물 연구원</a><nav class="main-nav"><a href="/"><MenuIcon name="home" />홈</a>{otherCollections.map((c) => <a href={c.route}><MenuIcon name={c.icon} />{c.name}</a>)}</nav></header>
-<main class="archive-main"><p class="eyebrow">{collection.label} · {documents.length} DOCUMENTS</p><h1>{collection.name}</h1><div class="archive-toolbar"><span>전체 {documents.length}편</span><a href="/">← 홈으로</a></div><ol class="document-list">{documents.map((document, index) => <li><a href={`/docs/${collection.folder}/${document.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? collection.name}</small></a></li>)}</ol></main>
+<header class="site-header"><a class="brand" href="/"><span class="brand-mark">KCAI</span>한국 반려동물 연구원</a><nav class="main-nav"><a href="/"><MenuIcon name="home" />홈</a>{otherCollections.map((c) => <a href={c.route}><MenuIcon name={c.icon} />{c.name}</a>)}</nav></header>
+<main class="archive-main">
+  <p class="eyebrow">{collection.label} · {documents.length} DOCUMENTS</p>
+  <h1>{collection.name}</h1>
+  <div class="archive-toolbar"><span>전체 {documents.length}편</span><a href="/">← 홈으로</a></div>
+  <ol class="document-list">{standalone.map((document, index) => <li><a href={hrefForEntry(document)}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? collection.name}</small></a></li>)}</ol>
+  {seriesGroups.map((group) => (
+    <section class="series-section">
+      <h2 class="series-heading">{group.name}<small>{group.docs.length}편 시리즈</small></h2>
+      <ol class="document-list">{group.docs.map((document, index) => <li><a href={hrefForEntry(document)}><span>{String(index + 1).padStart(2, '0')}</span><strong>{document.data.title}</strong><small>{document.data.category ?? collection.name}</small></a></li>)}</ol>
+    </section>
+  ))}
+</main>
 </body></html>

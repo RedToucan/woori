@@ -3,11 +3,14 @@ import { render } from 'astro:content';
 import { getAllDocuments } from '../../lib/documents';
 import '../../styles/document.css';
 import MenuIcon from '../../components/MenuIcon.astro';
+import ArticleImage from '../../components/ArticleImage.astro';
 
 export async function getStaticPaths() {
   const documents = await getAllDocuments();
   return documents.map((doc) => ({
-    params: { slug: `${doc.collection.folder}/${doc.entry.id}` },
+    // The URL is the document's `slug` alone (see hrefForEntry) — it stays
+    // stable even if the .mdx file later moves to a different content folder.
+    params: { slug: doc.entry.data.slug ?? doc.entry.id },
     props: { doc }
   }));
 }
@@ -25,7 +28,7 @@ const { Content } = await render(entry);
   </head>
   <body>
     <header class="document-header">
-      <a class="document-brand" href="/">KPAI · 한국 반려동물 연구원</a>
+      <a class="document-brand" href="/">KCAI · 한국 반려동물 연구원</a>
       <nav aria-label="문서 메뉴">
         <a href={collection.route}><MenuIcon name={collection.icon} />{collection.name} 목록</a>
         <a href="/"><MenuIcon name="home" />홈</a>
@@ -37,7 +40,7 @@ const { Content } = await render(entry);
         {entry.data.category && <span>{entry.data.category}</span>}
       </div>
       <article class="document-content">
-        <Content />
+        <Content components={{ img: ArticleImage }} />
       </article>
       <footer class="document-footer">
         <a href={collection.route}>← 목록으로 돌아가기</a>
